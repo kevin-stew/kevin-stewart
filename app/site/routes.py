@@ -1,4 +1,11 @@
-from flask import Blueprint, render_template
+from flask import Flask, Blueprint, render_template, request, flash, redirect, url_for
+
+from config import Config
+from app.forms import ContactForm
+
+import smtplib
+from email.message import EmailMessage
+
 
 site = Blueprint('site', __name__, template_folder='site_templates')
 
@@ -14,6 +21,24 @@ def about():
 def projects():
     return render_template('projects.html')
 
-@site.route('/contact')
+@site.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
+    form = ContactForm()
+
+    if request.method == 'POST':
+        msg = EmailMessage()
+        msg.set_content(form.message.data)
+        msg['Subject'] = f"{form.name.data} | {form.email.data}"
+        msg['To'] = Config.MAIL_SENDTO
+        # msg['From'] = form.email.data
+
+        server = smtplib.SMTP(Config.MAIL_SERVER, Config.MAIL_PORT)
+        server.starttls()  #function that 'starts' the server
+        server.login(Config.MAIL_USERNAME, Config.MAIL_PASSWORD)
+        server.sendmail(Config.MAIL_USERNAME, Config.MAIL_SENDTO, msg.as_string())
+        server.quit()
+
+        flash(f"Thanks for your message! I will get back to you as soon as I can :)")
+        return render_template("index.html")
+
+    return render_template("contact.html",form=form)
