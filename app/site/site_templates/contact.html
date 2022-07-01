@@ -5,4 +5,34 @@
 <h1>Contact Page</h1>
 <!-- page content goes here -->
 
+<h1>Contact Me 👋</h1>
+
+    <form action="{{ url_for('site.contact') }}" method="POST" >
+
+        <!-- #protect against CSRF exploits -->
+        {{ form.hidden_tag() }}  
+
+
+        <p>
+            {{ form.name.label }} 
+            <br>
+            {{ form.name }}
+        </p>
+
+        <p>
+            {{ form.email.label }} 
+            <br>
+            {{ form.email(size=30) }}
+        </p>
+
+          
+        <p>
+            {{ form.message.label }} 
+            <br>
+            {{ form.message }}
+        </p>
+
+        {{ form.submit }}
+    </form>
+
 {% endblock content %}
