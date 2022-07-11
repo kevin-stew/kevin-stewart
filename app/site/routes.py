@@ -37,7 +37,7 @@ def contact():
         server.sendmail(Config.MAIL_USERNAME, Config.MAIL_SENDTO, msg.as_string())
         server.quit()
 
-        flash(f"Thanks for your message! I will get back to you as soon as I can :)")
+        flash(f"Thanks for your message, I will respond to you soon!")
         return render_template("index.html")
 
     return render_template("contact.html",form=form)

@@ -1,16 +1,58 @@
-/* *{border: red 1px solid;} */
+/* *{border: aqua 1px solid;} */
 
-/* body{
-    background-color:rgb(99, 99, 99);
-    color: white;
-} */
+body{
+    /* background-color:rgb(99, 99, 99);
+    color: white; */
+    /* what we already have */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* what we're adding */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    /* min-height: 83vh; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
 
 .navbar-brand{
     font-size: xx-large;
+    font-family: fantasy;
+}
+.navbar-brand:hover{
+    transform: scale(1.01);
+    text-decoration: underline;
+}
+a.nav-link{
+    font-family: fantasy;
+    font-size: larger;
+}
+a.nav-link:hover{
+    transform: scale(1.01);
+    text-emphasis-color: lime;
+    text-decoration: underline;
 }
 
+.widthLimit{
+    max-width: 900px;
+}
+
+.homeImage{
+    border-radius: 100%;
+    border: 10px rgba(0, 0, 0, 0.562) solid;
+    margin-bottom: 2%;
+}
+.homeImage:hover{
+    /* transform: scale(1.03); */
+    border: 10px rgba(0, 0, 0, 0.8) solid;
+}
 .card-img-top{
-    height: 400px;
+    height: 350px;
     width: auto;
     object-fit: cover;
 }
@@ -20,27 +62,33 @@
     opacity: .8;
 }
 
+
 .card:hover{
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     opacity: 1;
 }
 
-footer{
-    /* border-top: black 1px solid; */
-    position:fixed;
-    bottom:0px;
-    width: 100%;
-    height: 100px;
-}
 
 .copyright{
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100px;
-    width:100%;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: small;
+    /* background-color: rgb(3, 3, 3); */
+    /* height: 35px; */
+    /* width:100%; */
 }
 
-form{
-    margin-left: 2%;
+.messageForm{
+    /* margin-left: 2%; */
+    width: 500px;
+    margin-top: 5em;
+    padding: 2%;
+    border: 1px black solid;
+    border-radius: 10px;
 }
 
+.form-control{
+    background-color: rgba(128, 128, 128, 0.342) !important;
+    border-color: black;
+    /* font-weight: 800; */
+}

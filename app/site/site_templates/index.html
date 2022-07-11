@@ -2,19 +2,45 @@
 
 {% block content %}
 
-<p>Index Page content here...</p>
-<!-- page content goes here -->
 
-{% with messages = get_flashed_messages() %}
-    {% if messages %}
-        {% for message in messages %}
-        <div class="alert alert-success alert-dismissible" role="alert">
-            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button> 
-            {{message}}
-        {% endfor %}
-    {% endif %}
-{% endwith %}
+<!-- page content here -->
+<div class="container align-self-center widthLimit">
+
+
+    <div class="jumbotron text-center mb-3">
+        <br><br>
+        <h1 class="display-3">Hello, world!</h1>
+        <br>
+        <p class="lead">A website to show you who I am, what I like to do, and a way to get in touch.</p>
+        <!-- <hr class="my-4"> -->
+        <br>
+    </div>
+
+    <div class="container d-flex justify-content-around flex-wrap md-7">
+
+        <div class="text-center">
+            <a href="{{ url_for('site.about') }}">
+                <img src="https://via.placeholder.com/200" alt="About" class="homeImage">
+            </a>
+            <h4>About Me</h4>
+        </div>
+        
+        <div class="text-center">
+            <a href="{{ url_for('site.projects') }}">    
+                <img src="https://via.placeholder.com/200" alt="Projects" class="homeImage">
+            </a>
+            <h4>My Work</h4>
+        </div>
+
+        <div class="text-center">
+            <a href="{{ url_for('site.contact') }}">
+                <img src="https://via.placeholder.com/200" alt="Contact" class="homeImage">
+            </a>
+            <h4>Let's Connect!</h4>
+        </div>
+    </div>
+
+<!-- end width limit -->
+</div>
 
 {% endblock content %}
