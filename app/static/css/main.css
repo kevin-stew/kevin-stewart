@@ -1,5 +1,6 @@
 /* *{border: aqua 1px solid;} */
 
+/* ALL PAGES start */
 body{
     /* background-color:rgb(99, 99, 99);
     color: white; */
@@ -20,16 +21,21 @@ body{
     background-image: linear-gradient(to bottom right, red, yellow);
 }
 
+.widthLimit{
+    max-width: 900px;
+}
+
+/* NAV BAR start */
 .navbar-brand{
     font-size: xx-large;
-    font-family: fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navbar-brand:hover{
     transform: scale(1.01);
     text-decoration: underline;
 }
 a.nav-link{
-    font-family: fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
 }
 a.nav-link:hover{
@@ -37,20 +43,40 @@ a.nav-link:hover{
     text-emphasis-color: lime;
     text-decoration: underline;
 }
+/* NAV BAR end */
 
-.widthLimit{
-    max-width: 900px;
+/* FOOTER start */
+.copyright{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: small;
+    /* background-color: rgb(3, 3, 3); */
+    /* height: 35px; */
+    /* width:100%; */
 }
+/* FOOTER end */
+/* ALL PAGES end */
 
+
+/* HOME start */
 .homeImage{
-    border-radius: 100%;
-    border: 10px rgba(0, 0, 0, 0.562) solid;
+    border-radius: 20%;
+    border: 7px rgba(0, 0, 0, .0) dashed;
     margin-bottom: 2%;
+    max-height:200px;
+    /* opacity: 0.7; */
 }
 .homeImage:hover{
     /* transform: scale(1.03); */
-    border: 10px rgba(0, 0, 0, 0.8) solid;
+    border: 7px rgba(0, 0, 0, 0.8) solid;
+    /* opacity: 1.0; */
 }
+/* div.homeIcons:hover{
+    text-decoration: underline;
+} */
+/* HOME end */
+
+
+/* PROJECTS start */
 .card-img-top{
     height: 350px;
     width: auto;
@@ -61,23 +87,31 @@ a.nav-link:hover{
     margin-bottom: 2%;
     opacity: .8;
 }
-
-
 .card:hover{
     transform: scale(1.01);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     opacity: 1;
 }
+.projectLink{
+    display: flex;
+    justify-content: center;
+}
+/* PROJECTS end */
 
-
-.copyright{
-    color: rgba(255, 255, 255, 0.4);
-    font-size: small;
-    /* background-color: rgb(3, 3, 3); */
-    /* height: 35px; */
-    /* width:100%; */
+/* ABOUT start */
+.headShot{
+    margin: 5vh;
+    max-height: 400px;
+    max-width: 325px;
+    border: 7px rgba(0, 0, 0, 0.507) solid;
+    border-radius: 50px;
+    object-fit: cover;
+    opacity: .9;
 }
 
+
+
+/* CONTACT start */
 .messageForm{
     /* margin-left: 2%; */
     width: 500px;
@@ -92,3 +126,4 @@ a.nav-link:hover{
     border-color: black;
     /* font-weight: 800; */
 }
+/* CONTACT end */
