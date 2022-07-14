@@ -4,14 +4,16 @@
 
 
 <!-- page content here -->
-<div class="container align-self-center widthLimit">
-
+<div class="container align-self-center d-flex flex-column justify-content-center widthLimit indexMain">
+    <img src="../../static/images/Headshot_Kevin Stewart_BW_small.jpg" class="align-self-center headShot" alt="">
     <div class="jumbotron text-center mb-3">
-        <br><br>
-        <h1 class="display-3">Hello, world!</h1>
-        <br>
-        <p class="lead">I built this website to showcase who I am, what I like to do, and what I can do for you.</p>
+      
+        <h1 class="display-3">Hi, I'm Kevin.</h1>
         <hr class="my-4">
+     
+        <p class="lead">I'm a full stack engineer with extensive experience in Python and Flask;
+            <br>  I am passionate about innovation, efficiency, and product design.</p>
+        <!-- <p class="lead">I built this website to showcase: <br> who I am // what I like to do // what I can do for you</p> -->
         <br>
     </div>
 
@@ -19,21 +21,21 @@
 
         <div class="text-center homeIcons">
             <a href="{{ url_for('site.about') }}">
-                <img src="../../static/images/head_vector5.png" alt="About" class="homeImage">
+                <img src="../../static/images/head_vector5.png" alt="About" class="homeIcon">
             </a>
             <h4>About Me</h4>
         </div>
         
         <div class="text-center homeIcons">
             <a href="{{ url_for('site.projects') }}">    
-                <img src="../../static/images/webdev1.png" alt="Projects" class="homeImage">
+                <img src="../../static/images/webdev1.png" alt="Projects" class="homeIcon">
             </a>
             <h4>My Work</h4>
         </div>
 
         <div class="text-center homeIcons">
             <a href="{{ url_for('site.contact') }}">
-                <img src="../../static/images/connect2.png" alt="Contact" class="homeImage">
+                <img src="../../static/images/connect2.png" alt="Contact" class="homeIcon">
             </a>
             <h4>Let's Connect!</h4>
         </div>
