@@ -61,10 +61,11 @@ a.nav-link:hover{
 .headShot{
     margin-top: 5vh;
     margin-bottom: 2vh;
+    margin-right: 2em;
     height: 225px;
     width: 225px;
-    border: 7px rgba(0, 0, 0, 0.507) solid;
-    border-radius: 100%;
+    border: 7px rgba(0, 0, 0, .5) solid;
+    border-radius: 10%;
     object-fit: cover;
     opacity: .9;
 }
@@ -90,10 +91,11 @@ a.nav-link:hover{
 /* INDEX end */
 
 
-
-
 /* ABOUT start */
-
+.normalLink{
+    /* text-decoration: none; */
+    color:black;
+}
 
 /* CONTACT start */
 .messageForm{
@@ -137,4 +139,12 @@ a.nav-link:hover{
 }
 /* PROJECTS end */
 
-/* PORJECTS CARD EXPEREMINT start */
+/* WEATHER APP start */
+.weatherDisplay{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.weatherForm{
+    flex-grow: 1;
+    margin-left: 5%;
+}

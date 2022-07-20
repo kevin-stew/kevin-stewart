@@ -7,41 +7,31 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <!-- <div class="jumbotron"> -->
-    <div class="container py-5" style="width:600px;">
-        <h1 class="display-3">Weather App</h1>
+    <div class="container py-5" style="width:500px;">
+        <h1 class="display-3">Weather App🌦</h1>
         <h6 class="lead">Current weather, anywhere in the world</h6>
+        <hr>
         
-        <div class="row d-flex  align-items-center">
-            <!-- <div class="col-md-8 col-lg-6 col-xl-4"> -->
-                
-                <h3 class="mb-4 pb-2 fw-normal">The forecast in:</h3>
-                
-                <form name="testData" id="citySearch" class="text-center">
-                    <input type="text" id="city" placeholder="search your city" class="form-control rounded">
-                    <!-- <button type="submit" id="submitButton" >Get Weather</button> -->
-                </form>
-                    
-
-              <div class=" shadow-0 border">
-                <div class=" p-4">
-      
-                  <h3 class="mb-1 sfw-normal" id="city_country">City, Co</h3>
-                  <p class="mb-2">Current temperature: <strong id="temp"></strong></p>
-                  <p>Feels like: <strong id="feelsLike"></strong></p>
-                  <p>High: <strong id="maxTemp"> </strong> &emsp; Low: <strong id="minTemp"></strong></p>
-                  <p>Humidity: <strong id="humidity"></strong></p>
-                  <p class="mb-0 me-4">Forecast: &nbsp; <i id="forecast"></i></p>
-
-                </div>
-              </div>
-      
-            <!-- </div> -->
-          </div>
-      
+        <div class="d-flex flex-row">
+          <h3 class="mb-4 pb-2 fw-normal">The forecast in:</h3>
+          <form name="testData" id="citySearch" class="weatherForm">
+              <input type="text" id="city" placeholder="search your city" class="form-control rounded">
+              <!-- <button type="submit" id="submitButton" >Get Weather</button> -->
+          </form>
         </div>
 
-<!-- end Jumbotron -->
-<!-- </div> -->
+        <div class="weatherDisplay">
+          <div class="p-4">
+            <h3 class="mb-1 sfw-normal" id="city_country">City</h3>
+            <p class="mb-2">Current temperature: <strong id="temp"></strong></p>
+            <p>Feels like: <strong id="feelsLike"></strong></p>
+            <p>High: <strong id="maxTemp"> </strong> &emsp; Low: <strong id="minTemp"></strong></p>
+            <p>Humidity: <strong id="humidity"></strong></p>
+            <p class="mb-0 me-4">Forecast: &nbsp; <i id="forecast"></i></p>
+          </div>
+        </div>
+    </div>
+
 
 
 {% endblock content %}
