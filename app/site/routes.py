@@ -38,6 +38,6 @@ def contact():
         server.quit()
 
         flash(f"Thanks for your message, I will respond to you soon!")
-        return render_template("index.html")
+        return render_template("contact.html",form=form)
 
     return render_template("contact.html",form=form)

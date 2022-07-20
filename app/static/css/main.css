@@ -62,8 +62,8 @@ a.nav-link:hover{
     margin-top: 5vh;
     margin-bottom: 2vh;
     margin-right: 2em;
-    height: 225px;
-    width: 225px;
+    height: 200px;
+    width: 200px;
     border: 7px rgba(0, 0, 0, .5) solid;
     border-radius: 10%;
     object-fit: cover;
@@ -74,13 +74,13 @@ a.nav-link:hover{
     border-radius: 50%;
     border: 7px rgba(0, 0, 0, .2) solid;
     margin-bottom: 2%;
-    max-height:200px;
-    /* opacity: 0.7; */
+    max-height:150px;
+    opacity: 0.5;
 }
 .homeIcon:hover{
     transform: scale(1.03);
     border: 7px rgba(0, 0, 0, 0.8) solid;
-    /* opacity: 1.0; */
+    opacity: 1.0;
 }
 /* div.homeIcons:hover{
     text-decoration: underline;
