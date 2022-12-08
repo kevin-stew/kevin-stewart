@@ -18,7 +18,8 @@ body{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-image: linear-gradient(to bottom right, lightblue, white);
+    /* background-color: lightblue; */
 }
 
 .widthLimit{
