@@ -20,6 +20,10 @@ def about():
 def projects():
     return render_template('projects.html')
 
+@site.route('/landscapes')
+def landscapes():
+    return render_template('landscapes.html')
+
 @site.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
