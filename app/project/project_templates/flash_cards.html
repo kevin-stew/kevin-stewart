@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container flex-grow mb-4">
+  <div class="d-flex dflex-wrap justify-content-center mt-4">
+      <h1 class="text-center">Zero Waste Flash Cards</h1>
+  </div>
+    <hr>
+      <p>
+        Create custom flash cards on a double-sided 8.5" x 11" printable PDF. You provide the content and printer, cutlines are auto-generated. For best results, flip on the long side between prints, and select "actual size" for PDF page handling.
+      </p>
+      <div class="graphic d-flex justify-content-center">
+        <img src="../../static/images/flash_cards.PNG" alt="Flash Cards" class="d-block w-100">
+      </div>
+      <a href="https://kevin-stew.github.io/zero-waste-flash-cards/" class="btn btn-outline-dark projectLink mt-2">Test your memory 🃏</a>
+      <a href="{{ url_for('site.tech_projects') }}" class="btn btn-outline-dark projectLink mt-2">Close X</a>
+</div>
+
+{% endblock content %}

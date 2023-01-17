@@ -10,7 +10,7 @@
 <!-- page content goes here -->
 <div class="d-flex flex-wrap">
 
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img src="../../static/images/tangeman1.JPG" class="card-img-top" alt="Tangeman Tree Care">
     <div class="card-body">
       <h5 class="card-title">Tangeman Tree Care, LLC</h5>
@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <img src="../../static/images/avalanchr.jpg" class="card-img-top" alt="boulder-scanning">
     <div class="card-body">
       <h5 class="card-title">AvalanchR </h5>
@@ -39,39 +39,39 @@
 </div>
 
 <hr>
-<br>
 <h2>Small Projects</h2>
 <br>
 
+
 <div class="d-flex flex-wrap">
-  <div class="card" style="width: 18rem;">
+<div class="card">
+<img src="../../static/images/flash_cards.PNG" class="card-img-top" alt="flash-cards">
+  <div class="card-body">
+    <h5 class="card-title">Zero Waste Flash Cards</h5>
+    <p class="card-text">Create custom flash cards on a double-sided 8.5" x 11" printable PDF. You provide the content and printer, cutlines are auto-generated. For best results, flip on the long side between prints, and select "actual size" for PDF page handling. </p>
+    <hr>
+    <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript
+    <hr>
+    <a href="{{ url_for('project.flash_cards') }}" class="btn btn-outline-light projectLink">Test your memory 🃏</a>
+  </div>
+</div>
+
+  <div class="card">
   <img src="../../static/images/weather_app.JPG" class="card-img-top" alt="weather-app">
     <div class="card-body">
       <h5 class="card-title">Weather App</h5>
-      <p class="card-text">A simple weather app using OpenWeatherMap API that lets know what's happening outside.</p>
+      <p class="card-text">A simple weather app using OpenWeatherMap API that lets you know what's happening outside.</p>
       <hr>
       <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
       <hr>
-      <a href="{{ url_for('project.weatherapp') }}" class="btn btn-outline-light projectLink">Check the weather 🌦</a>
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-  <img src="../../static/images/flash_cards.PNG" class="card-img-top" alt="flash-cards">
-    <div class="card-body">
-      <h5 class="card-title">Zero Waste Flash Cards</h5>
-      <p class="card-text">Create custom flash cards on a double-sided 8.5" x 11" printable PDF. You provide the content and printer, cutlines are auto-generated. For best results, flip on the long side between prints, and select "actual size" for PDF page handling. </p>
-      <hr>
-      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript
-      <hr>
-      <a href="https://kevin-stew.github.io/zero-waste-flash-cards/" class="btn btn-outline-light projectLink">Test your memory 🃏</a>
+      <a href="https://kevin-stew.github.io/weather-app/" class="btn btn-outline-light projectLink">Check the weather 🌦</a>
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <img src="../../static/images/formulaone.JPG" class="card-img-top" alt="racer-api">
     <div class="card-body">
-      <h5 class="card-title">Formula One Historical Results</h5>
+      <h5 class="card-title">Formula 1 Historical Results</h5>
       <p class="card-text">A small project using the Ergast Developer API, users can quickly find out the fromula one results for any round in any year, along with dirver and sponsor links.</p>
       <hr>
       <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript

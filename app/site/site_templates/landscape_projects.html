@@ -3,31 +3,30 @@
 {% block content %}
 
 <div class="container">
-<br>
-<h2>Campus</h2>
-<br>
+
+<br><h2>Campus Design</h2><br>
 
 <!-- page content goes here -->
 <div class="d-flex flex-wrap">
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img src="../../static/images/zna_1.JPG" class="card-img-top" alt="Zurich North America">
     <div class="card-body">
       <h5 class="card-title">ZNA</h5>
-      <p class="card-text">A large corperate campus for Zurich Insurance</p>
-      <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
+      <p class="card-text">A large corperate campus for Zurich Insurance North America</p>
+      <a href="{{ url_for('landscape.zna') }}" class="btn btn-outline-light projectLink">View Draft</a>
     </div>
 </div>
 
-<div class="card" style="width: 18rem;">
+<div class="card">
   <img src="../../static/images/mci_1.JPG" class="card-img-top" alt="Ministry of Commerce & Industry">
     <div class="card-body">
       <h5 class="card-title">MCI</h5>
       <p class="card-text">Landscapes for a governmental ministry in Saudi Arabia</p>
-      <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
+      <a href="{{ url_for('landscape.mci') }}" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
     </div>
 </div>
 
-<!-- <div class="card" style="width: 18rem;">
+<!-- <div class="card">
   <img src="../../static/images/mci_1.JPG" class="card-img-top" alt="#">
     <div class="card-body">
       <h5 class="card-title">#</h5>
@@ -38,9 +37,10 @@
 </div>
 
 <hr>
-<br><h2>Commercial</h2><br>
+<h2>Commercial Projcets</h2><br>
+
 <div class="d-flex flex-wrap">
-  <div class="card" style="width: 18rem;">
+  <div class="card">
     <img src="../../static/images/title_town_1.JPG" class="card-img-top" alt="Title Town Plaza">
     <div class="card-body">
       <h5 class="card-title">Title Town Park</h5>
@@ -48,7 +48,7 @@
       <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
     <img src="../../static/images/qua_1.JPG" class="card-img-top" alt="Mall of Buraidah">
       <div class="card-body">
         <h5 class="card-title">Buraidah Mall</h5>
@@ -65,17 +65,13 @@
       <p class="card-text" style="color: black;">Landuse plan and shopping mall layout in Saudi Arabia</p>
     </div>
   </a> -->
-
   </div>
 
-
-
-
-
 <hr>
-<br><h2>On-Structure</h2><br>
+<h2>On-Structure Landscapes</h2><br>
+
 <div class="d-flex flex-wrap">
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <img src="../../static/images/mart_park_1.JPG" class="card-img-top" alt="Merchandise Mart">
     <div class="card-body">
       <h5 class="card-title">Park at the Mart</h5>
@@ -86,7 +82,7 @@
       <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <img src="../../static/images/lakeshore_east_axon.JPG" class="card-img-top" alt="Merchandise Mart">
     <div class="card-body">
       <h5 class="card-title">Lakeshore East</h5>
@@ -97,13 +93,11 @@
 </div>
 
 <hr>
-<br>
-<h2>Residential</h2>
-<br>
+<h2>Residential Projcets</h2><br>
 
 <div class="d-flex flex-wrap">
   
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <img src="../../static/images/sunset_1.JPG" class="card-img-top" alt="Sunset Residence">
     <div class="card-body">
       <h5 class="card-title">Sunset Residence</h5>
@@ -115,7 +109,7 @@
     </div>
   </div>
 
-  <div class="card" style="width: 18rem;">
+  <div class="card">
   <img src="../../static/images/rose_spur_1.JPG" class="card-img-top" alt="Rose Spur">
     <div class="card-body">
       <h5 class="card-title">Rose Spur Ranch</h5>

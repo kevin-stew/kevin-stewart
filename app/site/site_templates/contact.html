@@ -24,10 +24,9 @@
 <div class="align-self-center messageForm">
 
 
-    <h1 class="display-3">Say hello 👋</h1>
+    <h1 class="display-3">Send a Message</h1>
 
     <form action="{{ url_for('site.contact') }}" method="POST" >
-
         <!-- #protect against CSRF exploits -->
         {{ form.hidden_tag() }}  
 
@@ -53,6 +52,6 @@
     </form>
 
 </div>
-
+<br><br>
 
 {% endblock content %}

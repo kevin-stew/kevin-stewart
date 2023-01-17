@@ -16,13 +16,13 @@ def home():
 def about():
     return render_template('about.html')
 
-@site.route('/projects')
-def projects():
-    return render_template('projects.html')
+@site.route('/tech-projects')
+def tech_projects():
+    return render_template('tech_projects.html')
 
-@site.route('/landscapes')
-def landscapes():
-    return render_template('landscapes.html')
+@site.route('/landscape-projects')
+def landscape_projects():
+    return render_template('landscape_projects.html')
 
 @site.route('/contact', methods=['GET', 'POST'])
 def contact():

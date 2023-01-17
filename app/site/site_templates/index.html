@@ -5,42 +5,74 @@
 
 <!-- page content here -->
 <div class="container align-self-center d-flex flex-column justify-content-center widthLimit indexMain">
-    <img src="../../static/images/Headshot_Kevin Stewart_BW_small.jpg" class="align-self-center headShot" alt="">
-    <div class="text-center mb-3">
-      
-        <h2 class="display-5">Hi, I'm Kevin.</h2>
-        <h5 class="lead">I'm a full-stack developer and landscape architect. I like to build things and solve problems. </h5>
+    <!-- <img src="#" class="align-self-center headShot" alt="Kevin Stewart"> -->
+    <br>
+    <div class="mb-3">
+        <h2 class="display-5">Hey there, I'm Kevin </h2>
+        <!-- <p>Full Stack Developer + Landsdcape Architect</p> -->
+        <h5 class="lead">I'm a full stack developer and licensed landscape architect: I like to build things and solve problems.</h5>
+        <hr>
             
-        <hr class="" >
-        <p class="lead"> Python // Flask // PostgreSQL // HTML // CSS // JavaScript </p>
-            <!-- <br>  I am passionate about innovation, efficiency, and product design.</p> -->
+        <!-- <br>  I am passionate about innovation, efficiency, and product design.</p> -->
         <!-- <p class="lead">I built this website to showcase: <br> who I am // what I like to do // what I can do for you</p> -->
-        <br>
+        <p>This is my personal site where I showcase projects I have built or been a part of. 
+            While the main priority is to display my skills via completed work, ultimately this site aspires to be a digital garden; 
+            a place that captures my experiences in and thoughts about technology, learning, and design.
+            For the moment it is a work-in-progress, but check back periodically for updates and expanded content.
+            If you like something you see, please let me know - it's always nice to get feedback.</p>
+        <hr>
+        <div class="d-flex justify-content-around">
+            <div >
+            <p> Tech Skills</p>
+            <ul>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>PostgreSQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div >
+            <p>Landscape Skills</p>
+            <ul>
+                <li>AutoCAD</li>
+                <li>Photoshop</li>
+                <li>Indesign</li>
+                <li>Illustrator</li>
+            </ul>
+        </div>
+        <div >
+            <p>3D skills</p>
+            <ul>
+                <li>SketchUp</li>
+                <li>Rhino</li>
+                <li>Polycam</li>
+                <li>3D Printing</li>
+            </ul>
+        </div>
+        </div>
     </div>
-
-    <div class="container d-flex justify-content-around flex-wrap md-7">
-
+    <!-- <div class="container d-flex justify-content-around flex-wrap md-7">
         <div class="text-center homeIcons">
             <a href="{{ url_for('site.about') }}">
                 <img src="../../static/images/head_vector5.png" alt="About" class="homeIcon">
             </a>
             <h4>About Me</h4>
         </div>
-        
         <div class="text-center homeIcons">
-            <a href="{{ url_for('site.projects') }}">    
+            <a href="{{ url_for('site.tech_projects') }}">    
                 <img src="../../static/images/webdev1.png" alt="Projects" class="homeIcon">
             </a>
             <h4>Tech Projects</h4>
         </div>
-
         <div class="text-center homeIcons">
             <a href="{{ url_for('site.contact') }}">
                 <img src="../../static/images/connect2.png" alt="Contact" class="homeIcon">
             </a>
             <h4>Let's Connect!</h4>
         </div>
-    </div>
+    </div> -->
 
 <!-- end width limit -->
 </div>
