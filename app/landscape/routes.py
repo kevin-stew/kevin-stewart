@@ -9,3 +9,7 @@ def zna():
 @landscape.route('/ministry-of-commerce-industry')
 def mci():
     return render_template('mci.html')
+
+@landscape.route('/analog-media-lab')
+def aml():
+    return render_template('aml.html')

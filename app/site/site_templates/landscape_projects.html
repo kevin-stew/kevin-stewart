@@ -12,7 +12,7 @@
   <img src="../../static/images/zna_1.JPG" class="card-img-top" alt="Zurich North America">
     <div class="card-body">
       <h5 class="card-title">ZNA</h5>
-      <p class="card-text">A large corperate campus for Zurich Insurance North America</p>
+      <p class="card-text">A large corporate campus for Zurich Insurance North America</p>
       <a href="{{ url_for('landscape.zna') }}" class="btn btn-outline-light projectLink">View Project</a>
     </div>
 </div>
@@ -59,13 +59,15 @@
 
   <!-- <div class="card bg-light text-white" style="width: 18rem; height: 16rem;">
     <a href="{{ url_for('site.home') }}">
-    <img src="../../static/images/qua_1.JPG" class="card-img" alt="...">
-    <div class="card-img-overlay">
-      <h5 class="card-title" style="color: black;">Buraidah Mall</h5>
-      <p class="card-text" style="color: black;">Landuse plan and shopping mall layout in Saudi Arabia</p>
-    </div>
-  </a> -->
-  </div>
+      <img src="../../static/images/qua_1.JPG" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title" style="color: black;">Buraidah Mall</h5>
+        <p class="card-text" style="color: black;">Landuse plan and shopping mall layout in Saudi Arabia</p>
+      </div>
+    </a>
+  </div> -->
+
+</div>
 
 <hr>
 <h2>On-Structure Landscapes</h2><br>
@@ -93,7 +95,7 @@
 </div>
 
 <hr>
-<h2>Residential Projcets</h2><br>
+<h2>Residential Projects</h2><br>
 
 <div class="d-flex flex-wrap">
   
@@ -120,8 +122,27 @@
       <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
     </div>
   </div>
-
 </div>
+
+<hr>
+<h2>Other</h2><br>
+
+<div class="d-flex flex-wrap">
+  
+  <div class="card">
+  <img src="../../static/images/aml_rococo_arm_chair.jpg" class="card-img-top" alt="Analog Media Lab">
+    <div class="card-body">
+      <h5 class="card-title">Analog Media Lab</h5>
+      <p class="card-text">Explorations in academic Landscape Design</p>
+      <!-- <hr>
+      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
+      <hr> -->
+      <a href="{{ url_for('landscape.aml') }}" class="btn btn-outline-light projectLink">View Project</a>
+    </div>
+  </div>
+
+
+
 </div>
 
 {% endblock content %}
