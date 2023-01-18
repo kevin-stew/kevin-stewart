@@ -20,6 +20,10 @@ body{
     background-image: linear-gradient(to bottom right, lightblue, white);
     /* background-color: lightblue; */
 }
+a{
+    text-decoration: none;
+    color: rgb(85, 85, 245);
+}
 .widthLimit{
     max-width: 900px;
 }
@@ -162,7 +166,7 @@ a.nav-link:hover{
 /* CONTACT end */
 
 
-/* PROJECTS start */
+/* PROJECT CARDS start */
 .card-img-top{
     height: 350px;
     width: auto;
@@ -177,18 +181,33 @@ a.nav-link:hover{
     color: white;
 }
 .card:hover{
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     opacity: 1;
+    /* border: 3px solid white; */
 }
+
+/* .comming-soon{
+    z-index: 0;
+    margin-bottom: -12px;
+    background-color:rgba(255, 255, 255,0.5);
+    color:#ffffff;
+}
+.comming-soon > h5, p{
+    opacity: 0.5;
+} */
+
+
+
+
 .projectLink{
     display: flex;
     justify-content: center;
 }
 /* CAROUSEL CUSTOMIZATIONS */
-.carousel{
+/* .carousel{
     max-width: 80%;
-}
+} */
 .black{
     color: black;
 }
@@ -218,7 +237,7 @@ a.nav-link:hover{
 }
 .graphic > img{
     /* border-radius: 10px; */
-    max-width: 50vw;
+    max-width: 60vw;
 }
 .graphic-attribution-left{
     position: absolute;

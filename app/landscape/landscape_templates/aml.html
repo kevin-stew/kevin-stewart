@@ -1,63 +1,44 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="container d-flex flex-column mb-4 view-width-70">
-  <h1 class="text-center mt-4"> Analog Media Lab</h1>
+<div class="container d-flex flex-column mb-4">
+  <h1 class="text-center mt-4">Analog Media Lab</h1>
   <hr>
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade align-self-center" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner previewer-frame">
+
+  <p class="mt-3 col-7 align-self-center"><a href="https://cargocollective.com/analogmedialab" target="_blank">Analog Media Lab</a> was an experimental design collaborative, formed in 2009 with Professor David L. Hays and Shuangshuang Wu, 
+    in an attempt to explore the unexpected and compelling properties of natural materials in design.</p>
+  
+  
+  <div id="carouselExampleControls" class="carousel slide align-self-center" data-bs-ride="carousel">
+    <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../../static/images/zna_1.JPG" class="d-block w-100" alt="ZNA Bird's Eye">
-        <p class="carousel-attribution">#</p>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Zurich Insurance North America</h5>
-          <!-- <p>Some representative placeholder content for the first slide.</p> -->
-        </div>
+        <img src="../../static/images/aml_rococo_arm_chair.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../../static/images/zna_4.JPG" class="d-block w-100" alt="ZNA Architecture Image">
-        <p class="carousel-attribution">#</p>
-        <div class="carousel-caption d-none d-md-block">
-          <!-- <h5>Goettsch Building</h5> -->
-          <h5>Architecture prior to integrating the landscape design</h5>
-        </div>
+        <img src="../../static/images/aml_rococo_arm_chair_section.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../../static/images/zna_2.JPG" class="d-block w-100" alt="ZNA Courtyard Perspective 1">
-        <p class="carousel-attribution">#</p>
-        <div class="carousel-caption d-none d-md-block">
-          <!-- <h5>Second slide label</h5> -->
-          <h5>Inner employee courtyard, lower level.</h5>
-        </div>
+        <img src="../../static/images/aml_honey_window_0.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="../../static/images/zna_3.JPG" class="d-block w-100" alt="ZNA Courtyard Perspective 2">
-        <p class="carousel-attribution">#</p>
-        <div class="carousel-caption d-none d-md-block">
-          <!-- <h5>Third slide label</h5> -->
-          <h5>Inner employee courtyard at ADA path</h5>
-        </div>
+        <img src="../../static/images/aml_honey_window_1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/aml_termites.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/aml_waterfall.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
     </button>
-</div>
-<br>
-  <p>
-      A collaborative de
-  </p>
+  </div>
 </div>
 
 {% endblock content %}
