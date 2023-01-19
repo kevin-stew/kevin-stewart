@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mb-4 d-flex flex-column col-7">
+  <!-- <div class="d-flex dflex-wrap justify-content-center mt-4"> -->
+    <h1 class="text-center mt-4">Experiments with svg files</h1>
+  <!-- </div> -->
+    <hr>
+    <!-- <div class="d-flex justify-content-center graphic">
+    </div> -->
+    <p class="mb-4">SVG files offer the ability to generate crisp, customized, vector graphics using lines of code paired with data sources.  Despite a career that involved a lot of visual production, I have only recently learned about this novel file type and interactive capabilities.  Below are some initial experiments.
+    </p>
+    <hr>
+    <p>These interactive population maps were made using Python, Pygal, and a static Json data source.
+    </p>
+    <object type="image/svg+xml" data="../../static/svg/world_populations.svg"></object>
+    <a href="../../static/svg/world_populations.svg" class="btn btn-primary  mb-4 mt-2 align-self-center" target="_blank">View full screen</a>
+    <object type="image/svg+xml" data="../../static/svg/north_america_populations.svg"></object>
+    <a href="../../static/svg/north_america_populations.svg" class="btn btn-primary  mb-4 mt-2 align-self-center" target="_blank">View full screen</a>
+    
+    <hr>
+    <p>This exhibit of the top-30 most popular Python-based GitHub repositories was made using Python, Pygal, and GitHub’s API.  Repos were generated based on the amount of stars awarded by other site users, and hovering over a project bar links directly to the project repo.  Next steps with this exhibit will be to have it auto generated using real-time data each time this page is opened. 
+    </p>
+    <object type="image/svg+xml" data="../../static/svg/python_repos.svg"></object>
+    <a href="../../static/svg/python_repos.svg" class="btn btn-primary  mb-4 mt-2 align-self-center" target="_blank">View full screen</a>
+    
+    
+    
+    
+    <!-- <a href="{{ url_for('site.tech_projects') }}" class="btn btn-outline-dark projectLink mt-2">Return to tech projects</a> -->
+    </div>
+
+{% endblock content %}

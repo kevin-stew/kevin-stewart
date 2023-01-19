@@ -44,8 +44,18 @@
 
 
 <div class="d-flex flex-wrap">
-<div class="card">
-<img src="../../static/images/flash_cards.PNG" class="card-img-top" alt="flash-cards">
+  
+  <div class="card">
+  <img src="../../static/images/svg_card.jpg" class="card-img-top" alt="flash-cards">
+  <div class="card-body">
+    <h5 class="card-title">SVG Experiments</h5>
+    <p class="card-text">Sample graphics made using Python's Pygal and API calls</p>
+    <a href="{{ url_for('project.svg_experiments') }}" class="btn btn-outline-light projectLink">See some charts 📊</a>
+  </div>
+  </div>
+  
+  <div class="card">
+  <img src="../../static/images/flash_cards.PNG"  class="card-img-top" alt="flash-cards">
   <div class="card-body">
     <h5 class="card-title">Zero Waste Flash Cards</h5>
     <p class="card-text">Create custom flash cards on a double-sided 8.5" x 11" printable PDF. You provide the content and printer, cutlines are auto-generated. For best results, flip on the long side between prints, and select "actual size" for PDF page handling. </p>
@@ -54,7 +64,7 @@
     <hr>
     <a href="{{ url_for('project.flash_cards') }}" class="btn btn-outline-light projectLink">Test your memory 🃏</a>
   </div>
-</div>
+  </div>
 
   <div class="card">
   <img src="../../static/images/weather_app.JPG" class="card-img-top" alt="weather-app">

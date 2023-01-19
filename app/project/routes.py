@@ -9,3 +9,7 @@ def xxx():
 @project.route('/flash-cards-preview')
 def flash_cards():
     return render_template('flash_cards.html')
+
+@project.route('/svg-experiments')
+def svg_experiments():
+    return render_template('svg_experiments.html')
