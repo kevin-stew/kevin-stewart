@@ -13,3 +13,7 @@ def mci():
 @landscape.route('/analog-media-lab')
 def aml():
     return render_template('aml.html')
+
+@landscape.route('/stewart-residence')
+def stewart_residence():
+    return render_template('stewart_residence.html')

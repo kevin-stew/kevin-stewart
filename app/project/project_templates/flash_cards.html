@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="container flex-grow mb-4">
-  <div class="d-flex dflex-wrap justify-content-center mt-4">
+<div class="container mb-4 d-flex flex-column justify-content-lg-center">
+  <div class="d-flex mt-4">
       <h1 class="text-center">Zero Waste Flash Cards</h1>
   </div>
     <hr>
@@ -12,8 +12,8 @@
       <div class="graphic d-flex justify-content-center">
         <img src="../../static/images/flash_cards.PNG" alt="Flash Cards" class="d-block w-100">
       </div>
-      <a href="https://kevin-stew.github.io/zero-waste-flash-cards/" class="btn btn-outline-dark projectLink mt-2">Test your memory 🃏</a>
-      <a href="{{ url_for('site.tech_projects') }}" class="btn btn-outline-dark projectLink mt-2">Close X</a>
+      <a href="https://kevin-stew.github.io/zero-waste-flash-cards/" class="btn btn-outline-dark projectLink mt-2 col-6 align-self-center">Test your memory 🃏</a>
+      <a href="{{ url_for('site.tech_projects') }}" class="btn btn-outline-dark projectLink mt-2  col-6 align-self-center">Close X</a>
 </div>
 
 {% endblock content %}
