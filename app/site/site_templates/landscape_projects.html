@@ -4,7 +4,80 @@
 
 <div class="container">
 
-<br><h2>Campus Design</h2><br>
+  
+  <br><h2>Residential Projects</h2><br>
+  
+  <div class="d-flex flex-wrap">
+    
+    <!-- <div class="card comming-soon">
+    <img src="../../static/images/sunset_1.JPG" class="card-img-top" alt="Sunset Residence">
+      <div class="card-body">
+        <h5 class="card-title">Sunset Residence</h5>
+        <p class="card-text">Residential landscape rehabilitation for a charming 1920's era estate</p>
+        <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
+      </div>
+    </div> -->
+  
+    <!-- <div class="card comming-soon">
+    <img src="../../static/images/rose_spur_1.JPG" class="card-img-top" alt="Rose Spur">
+      <div class="card-body">
+        <h5 class="card-title">Rose Spur Ranch</h5>
+        <p class="card-text">Landscape design for a hobby ranch in Old Snowmass, CO</p>
+        <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
+      </div>
+    </div> -->
+  
+    <div class="card">
+    <img src="../../static/images/streamside_project_card.png" class="card-img-top" alt="Waterfall Residence">
+      <div class="card-body">
+        <h5 class="card-title">Streamside Residence</h5>
+        <p class="card-text">Remodel of a private home in Colorado</p>
+        <a href="{{ url_for('landscape.streamside_residence') }}" class="btn btn-outline-light projectLink">View Project</a>
+      </div>
+    </div>
+  
+    <div class="card">
+    <img src="../../static/images/stewart_plan.png" class="card-img-top" alt="Stewart Family Residence">
+      <div class="card-body">
+        <h5 class="card-title">Residential Planting Concept</h5>
+        <p class="card-text">Planting design for a subdivision home.</p>
+        <a href="{{ url_for('landscape.stewart_residence') }}" class="btn btn-outline-light projectLink">View Project</a>
+      </div>
+    </div>
+
+  </div>
+
+
+<hr>
+<h2>On-Structure Landscapes</h2><br>
+
+<div class="d-flex flex-wrap">
+
+  <div class="card">
+  <img src="../../static/images/mart_park_1.JPG" class="card-img-top" alt="Merchandise Mart">
+    <div class="card-body">
+      <h5 class="card-title">Park at the Mart</h5>
+      <p class="card-text">A privately owned, publicly accessible, linear park in downtown Chicago.</p>
+      <!-- <hr>
+      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
+      <hr> -->
+      <a href="{{ url_for('landscape.park_at_the_mart') }}" class="btn btn-outline-light projectLink">View Project</a>
+    </div>
+  </div>
+
+  <div class="card comming-soon">
+  <img src="../../static/images/lakeshore_east_axon.JPG" class="card-img-top " alt="Merchandise Mart">
+    <div class="card-body">
+      <h5 class="card-title">Lakeshore East</h5>
+      <p class="card-text">Green roofs, amenity decks, parks, and at-grade landscapes for two residential towers</p>
+      <a href="{{ url_for('landscape.lakeshore_east') }}" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+<h2>Campus Design</h2><br>
 
 <!-- page content goes here -->
 <div class="d-flex flex-wrap">
@@ -36,11 +109,10 @@
 </div> -->
 </div>
 
-<hr>
+
+<!-- <hr>
 <h2>Commercial Projcets</h2><br>
-
 <div class="d-flex flex-wrap">
-
   <div class="card comming-soon">
     <img src="../../static/images/title_town_1.JPG" class="card-img-top" alt="Title Town Plaza">
     <div class="card-body ">
@@ -57,85 +129,7 @@
         <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
       </div>
   </div>
-
-  <!-- <div class="card bg-light " style="width: 18rem; height: 16rem;" >
-    <a href="{{ url_for('site.home') }}" class="">
-      <img src="../../static/images/qua_1.JPG" class="card-img" alt="..." >
-      <div class="card-img-overlay comming-soon">
-        <h5 class="card-title text-black" >Buraidah Mall</h5>
-        <p class="card-text text-black" >Landuse plan and shopping mall layout in Saudi Arabia</p>
-      </div>
-    </a>
-  </div> -->
-
-</div>
-
-<hr>
-<h2>On-Structure Landscapes</h2><br>
-
-<div class="d-flex flex-wrap">
-  <div class="card comming-soon">
-  <img src="../../static/images/mart_park_1.JPG" class="card-img-top" alt="Merchandise Mart">
-    <div class="card-body">
-      <h5 class="card-title">Park at the Mart</h5>
-      <p class="card-text">A privately owned, public accessible, linear park in downtown Chicago.</p>
-      <!-- <hr>
-      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
-      <hr> -->
-      <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
-    </div>
-  </div>
-  <div class="card comming-soon">
-  <img src="../../static/images/lakeshore_east_axon.JPG" class="card-img-top" alt="Merchandise Mart">
-    <div class="card-body">
-      <h5 class="card-title">Lakeshore East</h5>
-      <p class="card-text">Green roofs, amenity decks, parks, and at-grade landscapes for two residential towers</p>
-      <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
-    </div>
-  </div>
-</div>
-
-<hr>
-<h2>Residential Projects</h2><br>
-
-<div class="d-flex flex-wrap">
-  
-  <div class="card comming-soon">
-  <img src="../../static/images/sunset_1.JPG" class="card-img-top" alt="Sunset Residence">
-    <div class="card-body">
-      <h5 class="card-title">Sunset Residence</h5>
-      <p class="card-text">Residential landscape rehabilitation for a charming 1920's era estate</p>
-      <!-- <hr>
-      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
-      <hr> -->
-      <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
-    </div>
-  </div>
-
-  <div class="card comming-soon">
-  <img src="../../static/images/rose_spur_1.JPG" class="card-img-top" alt="Rose Spur">
-    <div class="card-body">
-      <h5 class="card-title">Rose Spur Ranch</h5>
-      <p class="card-text">Landscape design for a hobby ranch in Old Snowmass, CO</p>
-      <!-- <hr>
-      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
-      <hr> -->
-      <a href="#" class="btn btn-outline-light projectLink disabled">Coming Soon</a>
-    </div>
-  </div>
-
-  <div class="card">
-  <img src="../../static/images/stewart_plan.png" class="card-img-top" alt="Stewart Family Residence">
-    <div class="card-body">
-      <h5 class="card-title">Residential Planting Concept</h5>
-      <p class="card-text">Planting design for a subdivision home.</p>
-      <!-- <hr>
-      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
-      <hr> -->
-      <a href="{{ url_for('landscape.stewart_residence') }}" class="btn btn-outline-light projectLink">View Project</a>
-    </div>
-  </div>
-</div>
+</div> -->
 
 <hr>
 <h2>Other</h2><br>
@@ -143,19 +137,23 @@
 <div class="d-flex flex-wrap">
   
   <div class="card ">
+  <img src="../../static/images/raised_beds_project_card.PNG" class="card-img-top" alt="Analog Media Lab">
+    <div class="card-body">
+      <h5 class="card-title">Raised Cedar Planters</h5>
+      <p class="card-text">DYI raised beds using 3D scanning and modeling</p>
+      <a href="{{ url_for('landscape.raised_beds') }}" class="btn btn-outline-light projectLink">View Project</a>
+    </div>
+  </div>
+
+  <div class="card ">
   <img src="../../static/images/aml_rococo_arm_chair.jpg" class="card-img-top" alt="Analog Media Lab">
     <div class="card-body">
       <h5 class="card-title">Analog Media Lab</h5>
       <p class="card-text">Explorations in academic Landscape Design</p>
-      <!-- <hr>
-      <b>Stack:</b> HTML, CSS, Bootstrap, JavaScript, Axios
-      <hr> -->
       <a href="{{ url_for('landscape.aml') }}" class="btn btn-outline-light projectLink">View Project</a>
     </div>
   </div>
-
-
-
+  
 </div>
 
 {% endblock content %}

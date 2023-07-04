@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mb-4 d-flex flex-column">
+  <h1 class="text-center mt-4"> Streamside Residence</h1>
+  <hr>
+  <p class="align-self-center col-7">
+    Although relatively small, this residential project had no shortage of complexities due to its unique situation between a local river, valley-wide irrigation ditch, and state highway.  The site plan review process through the county yielded a complex puzzle for deciphering what was, and was not, allowable based on environmental setback requirements. Despite county code hinderances, a landscape design was realized to complement the modern architectural design, featuring a marble slab decorative entry sculpture, recessed auto court, and lower-level terrace with custom spa design.
+  </p>
+  
+  <!-- <div class="graphic align-self-center">
+    <img src="../../static/images/streamside_plan.png" alt="Streamside Residence Plan" class="d-block w-100">
+    <div class="graphic-attribution-right">Created while working at Design Workshop</div>
+  </div>
+  <br> -->
+
+  <div id="carouselExampleDark2" class="carousel carousel-dark slide carousel-fade">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="../../static/images/streamside_plan.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="background-white">Rendered Plan</h5>
+          <!-- <p>Some representative placeholder content for the first slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../../static/images/streamside_existing_conditions.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="background-white">Existing Conditions</h5>
+          <!-- <p>Some representative placeholder content for the second slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/streamside_slope_analysis.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="background-white">Slope Analysis</h5>
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/streamside_development_analysis.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="background-white">Development Analysis</h5>
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../../static/images/streamside_landscape_plan.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="background-white">Technical Landscape Plan</h5>
+          <!-- <p>Some representative placeholder content for the third slide.</p> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<br>
+
+<p class="align-self-center col-7">
+  A rough sketch of the driveway marble slab sculpture.  Initial concepts proposed a built in decorative fire feature that was not realized in the built condition.
+</p>
+
+  <div class="graphic align-self-center">
+    <img src="../../static/images/streamside_marble_sketch.png" alt="Entry Marble Sculpture" class="d-block w-100">
+    <div class="graphic-attribution-right">Created while working at Design Workshop</div>
+  </div>
+
+<div class="d-flex flex-row justify-content-between align-self-center">
+  <div>
+    <p>3D scan of constructed marble slabs</p>
+    <model-viewer src="../../static/glb/streamside_marble.glb" 
+                shadow-intensity="0" 
+                camera-orbit="230deg 70deg 100%"
+                class="model3d"
+                camera-controls
+                touch-action="pan-y"
+                interaction-prompt-style="basic">
+  </div>
+</div>
+<br>
+  <p class="align-self-center col-7">
+    The custom spa design went through many iterations, some as elaborate as including fire features and vanishing edges.  In the end the client opted to maximize total square footage with a simple rectangular design.
+  </p>
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../../static/images/streamside_spa_option1.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../../static/images/streamside_spa_option2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/streamside_spa_option3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/streamside_spa_option4.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/streamside_spa_option5.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../../static/images/streamside_spa_option7.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <!-- <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p> -->
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+
+<div class="d-flex flex-row justify-content-between align-self-center">
+  <div>
+    <p>3D scan of constructed spa (winter storage condition)</p>
+    <model-viewer src="../../static/glb/streamside_spa.glb" 
+                shadow-intensity="2" 
+                camera-orbit="230deg 70deg 100%"
+                class="model3d"
+                camera-controls
+                touch-action="pan-y"
+                interaction-prompt-style="basic">
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+{% endblock content %}

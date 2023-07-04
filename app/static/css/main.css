@@ -210,6 +210,9 @@ margin-right: 30%;
 .white{
     color: white;
 }
+.background-white{
+    background-color: white;
+}
 .carousel-attribution{
     /* color:white; */
     position: absolute;
@@ -246,6 +249,13 @@ margin-right: 30%;
     font-size: 9px;
     font-style: italic;
 }
+
+.model3d{
+    width: 50vw;
+    height: 60vh;
+    border: 1px gray solid;
+}
+
 /* PROJECTS end */
 
 /* WEATHER APP start */
